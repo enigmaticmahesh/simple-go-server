@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Static website</title>
-</head>
-<body>
+    <style>
+      .nav__container ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      }
+      .nav__container ul li {
+        list-style: none;
+      }
+      .nav__container ul li a {
+        text-decoration: none;
+      }
+      .nav__container ul li.active {
+        background-color: black;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .nav__container ul li.active a {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav__container">
+      <ul>
+        <li class="active">
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/hello">Hello</a>
+        </li>
+        <li>
+          <a href="/form.html">Form</a>
+        </li>
+      </ul>
+    </nav>
     <h2>Static website</h2>
-</body>
+  </body>
 </html>
